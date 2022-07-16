@@ -1,3 +1,4 @@
+import { Button } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
@@ -51,6 +52,7 @@ const Home: NextPage = () => {
             </p>
           </a>
         </div>
+        <Button>ボタン</Button>
       </main>
 
       <footer className={styles.footer}>
