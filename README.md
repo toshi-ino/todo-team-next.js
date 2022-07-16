@@ -4,11 +4,12 @@
 
 - 管理： ジュンペイ （Junkichi89）
 - リーダー:（Issue 管理など）
+  - Akashi(7/16~)
 - レビュワー: メンバー全員
 - デザイン：
 - サポート:
   - Shogo
-- 参加メンバー
+- 参加メンバー:
   - Akashi
   - taisei
   - Hiromichi
