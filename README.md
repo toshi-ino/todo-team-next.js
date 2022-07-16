@@ -8,8 +8,10 @@
 - デザイン：
 - サポート:
   - Shogo
-
 - 参加メンバー
+  - Akashi
+  - taisei
+  - Hiromichi
 
 ## 使用技術
 
