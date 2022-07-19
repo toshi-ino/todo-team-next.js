@@ -18,8 +18,6 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-// import { Header } from "../components/Header";
-
 export default function Create() {
   const [value, setValue] = useState("High");
 
@@ -64,6 +62,8 @@ export default function Create() {
               <Input
                 h="72px"
                 mt="4px"
+                p="8px 16px"
+                fontSize="24px"
                 color="blackAlpha.800"
                 borderWidth="1px"
                 borderColor="blackAlpha.800"
@@ -82,6 +82,7 @@ export default function Create() {
               <Textarea
                 h="208px"
                 mt="4px"
+                fontSize="24px"
                 color="blackAlpha.800"
                 borderWidth="1px"
                 borderColor="blackAlpha.800"
