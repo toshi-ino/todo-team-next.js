@@ -18,6 +18,8 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
+import { Header } from "../components/Header";
+
 export default function Create() {
   const [value, setValue] = useState("High");
 
@@ -26,7 +28,7 @@ export default function Create() {
       <Head>
         <title>TODO New</title>
       </Head>
-      <Box h="80px" bg="green.300" />
+      <Header />
       <Container mt="16px">
         <Center>
           <VStack>
