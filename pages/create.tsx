@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import {
-  Box,
   Button,
   Center,
   Container,
@@ -33,7 +32,12 @@ export default function Create() {
         <Center>
           <VStack>
             <Flex w="1080px">
-              <Text fontSize="28px" color="blackAlpha.800">
+              <Text
+                fontSize="28px"
+                fontWeight="bold"
+                lineHeight="33px"
+                color="blackAlpha.800"
+              >
                 NEW TODO
               </Text>
               <Spacer />
@@ -41,8 +45,8 @@ export default function Create() {
                 w="112px"
                 h="40px"
                 mt="8px"
-                p="0"
                 fontSize="18px"
+                fontWeight="bold"
                 bg="green.300"
                 color="blackAlpha.800"
                 borderWidth="1px"
@@ -56,6 +60,7 @@ export default function Create() {
               <FormLabel
                 m="0"
                 fontSize="24px"
+                fontWeight="bold"
                 lineHeight="24px"
                 color="blackAlpha.800"
               >
@@ -66,16 +71,19 @@ export default function Create() {
                 mt="4px"
                 p="8px 16px"
                 fontSize="24px"
+                fontWeight="bold"
                 color="blackAlpha.800"
                 borderWidth="1px"
                 borderColor="blackAlpha.800"
                 borderRadius="10px"
               ></Input>
             </FormControl>
-            <FormControl mt="24px">
+            <FormControl>
               <FormLabel
-                m="0"
+                // FormControlにmt:8pxがあるため、FormLabelのmtは16pxに設定
+                m="16px 0 0 0"
                 fontSize="24px"
+                fontWeight="bold"
                 lineHeight="24px"
                 color="blackAlpha.800"
               >
@@ -85,15 +93,17 @@ export default function Create() {
                 h="208px"
                 mt="4px"
                 fontSize="24px"
+                fontWeight="bold"
                 color="blackAlpha.800"
                 borderWidth="1px"
                 borderColor="blackAlpha.800"
                 borderRadius="10px"
               ></Textarea>
             </FormControl>
-            <FormControl h="60px" mt="24px">
+            <FormControl>
               <FormLabel
-                m="0"
+                // FormControlにmt:8pxがあるため、FormLabelのmtは16pxに設定
+                m="16px 0 0 0"
                 fontSize="24px"
                 lineHeight="24px"
                 color="blackAlpha.800"
@@ -105,6 +115,7 @@ export default function Create() {
                   <Radio value="High">
                     <Text
                       fontSize="24px"
+                      fontWeight="bold"
                       lineHeight="28px"
                       color="blackAlpha.800"
                     >
@@ -114,6 +125,7 @@ export default function Create() {
                   <Radio value="Middle">
                     <Text
                       fontSize="24px"
+                      fontWeight="bold"
                       lineHeight="28px"
                       color="blackAlpha.800"
                     >
@@ -123,6 +135,7 @@ export default function Create() {
                   <Radio value="Low">
                     <Text
                       fontSize="24px"
+                      fontWeight="bold"
                       lineHeight="28px"
                       color="blackAlpha.800"
                     >
@@ -132,13 +145,15 @@ export default function Create() {
                 </Stack>
               </RadioGroup>
             </FormControl>
-            <Flex w="100%" mt="12px" flexDirection="row-reverse">
+            <Flex w="100%" flexDirection="row-reverse">
               <Button
                 w="112px"
                 h="40px"
-                ml="8px"
+                // Flexにmt:8pxがあるため、Buttonのmtは4pxに設定
+                m="4px 0 0 8px"
                 p="0"
                 fontSize="18px"
+                fontWeight="bold"
                 bg="green.600"
                 color="green.50"
                 borderWidth="1px"
@@ -150,9 +165,11 @@ export default function Create() {
               <Button
                 w="112px"
                 h="40px"
-                ml="8px"
+                // Flexにmt:8pxがあるため、Buttonのmtは4pxに設定
+                mt="4px"
                 p="0"
                 fontSize="18px"
+                fontWeight="bold"
                 bg="pink.100"
                 color="blackAlpha.800"
                 borderWidth="1px"
