@@ -1,7 +1,7 @@
 import { FaPen } from "react-icons/fa"
 import { IconContext } from 'react-icons'
 
-export const PenIcon: React.VFC = () => {
+const PenIcon: React.VFC = () => {
   return (
     <IconContext.Provider  value={{ color: 'black' }}>
       <FaPen />
@@ -9,3 +9,4 @@ export const PenIcon: React.VFC = () => {
   )
 }
 
+export default PenIcon

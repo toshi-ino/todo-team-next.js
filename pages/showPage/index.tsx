@@ -1,5 +1,11 @@
 import { Header } from "../../components/Header";
 import {
+  Modal,
+  ModalBody,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  useDisclosure,
   Input,
   Textarea,
   Box,
@@ -10,9 +16,11 @@ import {
   Stack,
   HStack,
 } from "@chakra-ui/react";
-import { PenIcon } from "./penIcon";
+import PenIcon from "./penIcon";
+import ViewModal from './modal'
 
 export default function ShowPage() {
+  const { isOpen, onClose, onOpen } = useDisclosure();
   return (
     <>
       <Header />
@@ -239,6 +247,15 @@ export default function ShowPage() {
           </Stack>
         </Box>
       </Stack>
+      <Button onClick={onOpen}>開けモーダル</Button>
+      <Modal isOpen={isOpen} onClose={onClose}>
+       <ModalOverlay />
+       <ModalContent>
+         <ModalBody>
+           <ViewModal />
+         </ModalBody>
+       </ModalContent>
+     </Modal>
     </>
   );
 }

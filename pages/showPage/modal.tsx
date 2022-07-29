@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 // tests
 
-export const ViewModal = () => {
+export default function ViewModal() {
   return (
     <>
       <VStack mt="230px">
