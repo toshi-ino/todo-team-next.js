@@ -122,4 +122,8 @@ issue#３ Todo の作成画面の実装の場合
 
 例）
 `git commit -m '#3 refactor: Todo作成画面のレイアウト調整' `
+<<<<<<< HEAD
 # team-todo-test
+=======
+# todo-team-next.js
+>>>>>>> 9b5eb7b566a1be0715ff42073db34fca223a8da4
