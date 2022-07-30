@@ -9,10 +9,19 @@ import {
   Button,
   Stack,
   HStack,
+  useDisclosure,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalBody,
+  ModalHeader,
 } from "@chakra-ui/react";
 import { PenIcon } from "./penIcon";
+import { ViewModal } from "./modal";
 
 export default function ShowPage() {
+  const { isOpen, onClose, onOpen } = useDisclosure();
+
   return (
     <>
       <Header />
@@ -81,11 +90,10 @@ export default function ShowPage() {
                 bgColor="green.300"
                 borderWidth="1px"
                 borderColor="blackAlpha.800"
-                iconSpacing='10px'
+                iconSpacing="10px"
                 rightIcon={<PenIcon />}
               >
                 Edit
-            
               </Button>
 
               <Stack>
@@ -119,9 +127,43 @@ export default function ShowPage() {
               borderWidth="1px"
               borderColor="blackAlpha.800"
               borderRadius="50px"
+              onClick={onOpen}
             >
               Comment
             </Button>
+            <Modal isOpen={isOpen} onClose={onClose}>
+              <ModalOverlay />
+              <ModalContent w="380px" border="1px solid black">
+                <ModalHeader fontWeight="bold" fontSize="30px" pt="5px" pb="0">
+                  Comment
+                </ModalHeader>
+                <ModalBody>
+                  <Text fontSize="20px" fontWeight="bold" pb="5px">
+                    Name
+                  </Text>
+                  <Input pb="5px" />
+                  <Text fontSize="20px" fontWeight="bold" pb="5px">
+                    Your Comment
+                  </Text>
+                  <Textarea
+                    mb="10px"
+                    borderColor="blackAlpha.800"
+                    h="160px"
+                    pb="5px"
+                  />
+                  <Button
+                    mb="15px"
+                    bgColor="green.600"
+                    color="white"
+                    fontSize="18px"
+                    border="1px solid black"
+                    w="100%"
+                  >
+                    CREATE
+                  </Button>
+                </ModalBody>
+              </ModalContent>
+            </Modal>
             <Button
               w="112px"
               h="40px"
