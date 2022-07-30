@@ -10,11 +10,6 @@ import {
   Stack,
   HStack,
   useDisclosure,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalBody,
-  ModalHeader,
 } from "@chakra-ui/react";
 import { PenIcon } from "./penIcon";
 import { CommentModal } from "./commentModal";
